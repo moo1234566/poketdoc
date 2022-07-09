@@ -1,9 +1,16 @@
-포켓몬스터 2022 띠부띠부씰 도감 ver 1.1
+포켓몬스터 2022 띠부띠부씰 도감 ver 1.2
 ==========================
 
 https://pokedoc.github.io/pokedoc/
 
 ## 버전 히스토리
+
+### ver 1.2
+
+1. 2세대 포켓몬 추가
+
+2. 다운로드 버튼생성 추가
+삼성 인터넷 브라우저 사용자 및 위 이미지 저장 버튼이 안 먹으면 아래 버튼으로 다운로드 버튼을 직접 생성 하여 저장 가능.
 ### ver 1.1
 <img src="https://pokedoc.github.io/pokedoc/image/pokedoc.png">
 
