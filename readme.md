@@ -4,7 +4,9 @@
 https://pokedoc.github.io/pokedoc/
 
 ## 버전 히스토리
-
+### ver 1.3
+출시순 및 1,2 세대 따로 도감
+이미지 업데이트
 ### ver 1.2
 
 1. 2세대 포켓몬 추가
