@@ -5,10 +5,10 @@
         <meta data-n-head="ssr" name="robots" content="noindex">
         <meta data-n-head="ssr" name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="포켓몬스터 2022 띠부띠부씰 도감 ver 1.3">
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="포켓몬스터 2022 띠부띠부씰 도감 ver 1.4">
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="포켓몬스터 띠부띠부씰 추억을 보관하자 2세대">
         <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://pokedoc.github.io/pokedoc/preview.PNG">
-        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 1.3</title>
+        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 1.4</title>
         <style>
             .flex {display: flex;}
             #downloadBtn { margin: 0 10px; }
@@ -20,154 +20,125 @@
             .poke05 {background:url("../image/re_pokemon5.png") no-repeat; background-size: 619px 619px;}
             .poke06 {background:url("../image/re_pokemon6.png") no-repeat; background-size: 619px 619px;}
             .poke07 {background:url("../image/re_pokemon7.png") no-repeat; background-size: 619px 619px;}
-            .poke08 {background:url("../image/2nd_v1.3.png") no-repeat; background-size: 1024px 1224px;}
+            .poke08 {background:url("../image/2nd_v1.4.jpeg") no-repeat; background-size: 674px 2056px;}
             .image {position:relative; display:inline-block; width:84px; height:111px; margin: 1px; cursor:pointer;}
             .image > div {width:100%; height:100%; position:absolute; border: 1px solid black;}
-            .img01 {background-position: -124px -34px}
-            .img02 {background-position: -217px -34px;}
-            .img03 {background-position: -310px -34px;}
-            .img04 {background-position: -403px -34px;}
-            .img05 {background-position: -496px -34px;}
-            .img06 {background-position: -124px -152px;}
-            .img07 {background-position: -217px -152px;}
-            .img08 {background-position: -310px -152px;}
-            .img09 {background-position: -403px -152px;}
-            .img10 {background-position: -496px -152px;}
-            .img11 {background-position: -124px -270px;}
-            .img12 {background-position: -217px -270px;}
-            .img13 {background-position: -310px -270px;}
-            .img14 {background-position: -403px -270px;}
-            .img15 {background-position: -496px -270px;}
-            .img16 {background-position: -124px -389px;}
-            .img17 {background-position: -217px -389px;}
-            .img18 {background-position: -310px -389px;}
-            .img19 {background-position: -403px -389px;}
-            .img20 {background-position: -496px -389px;}
-            .img21 {background-position: -124px -507px;}
-            .img22 {background-position: -217px -507px;}
-            .img23 {background-position: -310px -507px;}
-            .img24 {background-position: -403px -507px;}
-            .img25 {background-position: -496px -507px;}
-            .img201 {background-position: -0px -5px}
-            .img202 {background-position: -88px -5px;}
-            .img203 {background-position: -172px -5px;}
-            .img204 {background-position: -258px -5px;}
-            .img205 {background-position: -341px -5px;}
-            .img206 {background-position: -426px -5px;}
-            .img207 {background-position: -512px -5px;}
-            .img208 {background-position: -599px -5px;}
-            .img209 {background-position: -685px -5px;}
-            .img210 {background-position: -766px -5px;}
-            .img211 {background-position: -851px -5px;}
-            .img212 {background-position: -936px -5px;}
-            .img301 {background-position: -0px -116px}
-            .img302 {background-position: -88px -116px;}
-            .img303 {background-position: -172px -116px;}
-            .img304 {background-position: -258px -116px;}
-            .img305 {background-position: -341px -116px;}
-            .img306 {background-position: -426px -116px;}
-            .img307 {background-position: -512px -116px;}
-            .img308 {background-position: -599px -116px;}
-            .img309 {background-position: -685px -116px;}
-            .img310 {background-position: -766px -116px;}
-            .img311 {background-position: -851px -116px;}
-            .img312 {background-position: -936px -116px;}
-            .img401 {background-position: -0px -230px}
-            .img402 {background-position: -88px -230px;}
-            .img403 {background-position: -172px -230px;}
-            .img404 {background-position: -258px -230px;}
-            .img405 {background-position: -341px -230px;}
-            .img406 {background-position: -426px -230px;}
-            .img407 {background-position: -512px -230px;}
-            .img408 {background-position: -599px -230px;}
-            .img409 {background-position: -685px -230px;}
-            .img410 {background-position: -766px -230px;}
-            .img411 {background-position: -851px -230px;}
-            .img412 {background-position: -936px -230px;}
-            .img501 {background-position: -0px -345px}
-            .img502 {background-position: -88px -345px;}
-            .img503 {background-position: -172px -345px;}
-            .img504 {background-position: -258px -345px;}
-            .img505 {background-position: -341px -345px;}
-            .img506 {background-position: -426px -345px;}
-            .img507 {background-position: -512px -345px;}
-            .img508 {background-position: -599px -345px;}
-            .img509 {background-position: -685px -345px;}
-            .img510 {background-position: -766px -345px;}
-            .img511 {background-position: -851px -345px;}
-            .img512 {background-position: -936px -345px;}
-            .img601 {background-position: -0px -500px}
-            .img602 {background-position: -88px -500px;}
-            .img603 {background-position: -172px -500px;}
-            .img604 {background-position: -258px -500px;}
-            .img605 {background-position: -341px -500px;}
-            .img606 {background-position: -426px -500px;}
-            .img607 {background-position: -512px -500px;}
-            .img608 {background-position: -599px -500px;}
-            .img609 {background-position: -685px -500px;}
-            .img610 {background-position: -766px -500px;}
-            .img611 {background-position: -851px -500px;}
-            .img612 {background-position: -936px -500px;}
-            .img701 {background-position: -0px -615px}
-            .img702 {background-position: -88px -615px;}
-            .img703 {background-position: -172px -615px;}
-            .img704 {background-position: -258px -615px;}
-            .img705 {background-position: -341px -615px;}
-            .img706 {background-position: -426px -615px;}
-            .img707 {background-position: -512px -615px;}
-            .img708 {background-position: -599px -615px;}
-            .img709 {background-position: -685px -615px;}
-            .img710 {background-position: -766px -615px;}
-            .img711 {background-position: -851px -615px;}
-            .img712 {background-position: -936px -615px;}
-            .img801 {background-position: -0px -728px}
-            .img802 {background-position: -88px -728px;}
-            .img803 {background-position: -172px -728px;}
-            .img804 {background-position: -258px -728px;}
-            .img805 {background-position: -341px -728px;}
-            .img806 {background-position: -426px -728px;}
-            .img807 {background-position: -512px -728px;}
-            .img808 {background-position: -599px -728px;}
-            .img809 {background-position: -685px -728px;}
-            .img810 {background-position: -766px -728px;}
-            .img811 {background-position: -851px -728px;}
-            .img812 {background-position: -936px -728px;}
-            .img901 {background-position: -0px -882px}
-            .img902 {background-position: -88px -882px;}
-            .img903 {background-position: -172px -882px;}
-            .img904 {background-position: -258px -882px;}
-            .img905 {background-position: -341px -882px;}
-            .img906 {background-position: -426px -882px;}
-            .img907 {background-position: -512px -882px;}
-            .img908 {background-position: -599px -882px;}
-            .img909 {background-position: -685px -882px;}
-            .img910 {background-position: -766px -882px;}
-            .img911 {background-position: -851px -882px;}
-            .img912 {background-position: -936px -882px;}
-            .img1001 {background-position: -0px -998px}
-            .img1002 {background-position: -88px -998px;}
-            .img1003 {background-position: -172px -998px;}
-            .img1004 {background-position: -258px -998px;}
-            .img1005 {background-position: -341px -998px;}
-            .img1006 {background-position: -426px -998px;}
-            .img1007 {background-position: -512px -998px;}
-            .img1008 {background-position: -599px -998px;}
-            .img1009 {background-position: -685px -998px;}
-            .img1010 {background-position: -766px -998px;}
-            .img1011 {background-position: -851px -998px;}
-            .img1012 {background-position: -936px -998px;}
-            .img1101 {background-position: -0px -1110px}
-            .img1102 {background-position: -88px -1110px;}
-            .img1103 {background-position: -172px -1110px;}
-            .img1104 {background-position: -258px -1110px;}
-            .img1105 {background-position: -341px -1110px;}
-            .img1106 {background-position: -426px -1110px;}
-            .img1107 {background-position: -512px -1110px;}
-            .img1108 {background-position: -599px -1110px;}
-            .img1109 {background-position: -685px -1110px;}
-            .img1110 {background-position: -766px -1110px;}
-            .img1111 {background-position: -851px -1110px;}
-            .img1112 {background-position: -936px -1110px;}
+            .img201 {background-position: -10px -10px}
+            .img202 {background-position: -104px -10px;}
+            .img203 {background-position: -198px -10px;}
+            .img204 {background-position: -293px -10px;}
+            .img205 {background-position: -388px -10px;}
+            .img206 {background-position: -481px -10px;}
+            .img207 {background-position: -576px -10px;}
+            .img301 {background-position: -10px -130.5px}
+            .img302 {background-position: -104px -130.5px;}
+            .img303 {background-position: -198px -130.5px;}
+            .img304 {background-position: -293px -130.5px;}
+            .img305 {background-position: -388px -130.5px;}
+            .img306 {background-position: -481px -130.5px;}
+            .img307 {background-position: -576px -130.5px;}
+            .img401 {background-position: -10px -251px}
+            .img402 {background-position: -104px -251px;}
+            .img403 {background-position: -198px -251px;}
+            .img404 {background-position: -293px -251px;}
+            .img405 {background-position: -388px -251px;}
+            .img406 {background-position: -481px -251px;}
+            .img407 {background-position: -576px -251px;}
+            .img501 {background-position: -10px -371.5px}
+            .img502 {background-position: -104px -371.5px;}
+            .img503 {background-position: -198px -371.5px;}
+            .img504 {background-position: -293px -371.5px;}
+            .img505 {background-position: -388px -371.5px;}
+            .img506 {background-position: -481px -371.5px;}
+            .img507 {background-position: -576px -371.5px;}
+            .img601 {background-position: -10px -491px}
+            .img602 {background-position: -104px -491px;}
+            .img603 {background-position: -198px -491px;}
+            .img604 {background-position: -293px -491px;}
+            .img605 {background-position: -388px -491px;}
+            .img606 {background-position: -481px -491px;}
+            .img607 {background-position: -576px -491px;}
+            .img701 {background-position: -10px -611px}
+            .img702 {background-position: -104px -611px;}
+            .img703 {background-position: -198px -611px;}
+            .img704 {background-position: -293px -611px;}
+            .img705 {background-position: -388px -611px;}
+            .img706 {background-position: -481px -611px;}
+            .img707 {background-position: -576px -611px;}
+            .img801 {background-position: -10px -731px}
+            .img802 {background-position: -104px -731px;}
+            .img803 {background-position: -198px -731px;}
+            .img804 {background-position: -293px -731px;}
+            .img805 {background-position: -388px -731px;}
+            .img806 {background-position: -481px -731px;}
+            .img807 {background-position: -576px -731px;}
+            .img901 {background-position: -10px -851px}
+            .img902 {background-position: -104px -851px;}
+            .img903 {background-position: -198px -851px;}
+            .img904 {background-position: -293px -851px;}
+            .img905 {background-position: -388px -851px;}
+            .img906 {background-position: -481px -851px;}
+            .img907 {background-position: -576px -851px;}
+            .img1001 {background-position: -10px -971.5px}
+            .img1002 {background-position: -104px -971.5px;}
+            .img1003 {background-position: -198px -971.5px;}
+            .img1004 {background-position: -293px -971.5px;}
+            .img1005 {background-position: -388px -971.5px;}
+            .img1006 {background-position: -481px -971.5px;}
+            .img1007 {background-position: -576px -971.5px;}
+            .img1101 {background-position: -10px -1091.5px}
+            .img1102 {background-position: -104px -1091.5px;}
+            .img1103 {background-position: -198px -1091.5px;}
+            .img1104 {background-position: -293px -1091.5px;}
+            .img1105 {background-position: -388px -1091.5px;}
+            .img1106 {background-position: -481px -1091.5px;}
+            .img1107 {background-position: -576px -1091.5px;}
+            .img1201 {background-position: -10px -1212px}
+            .img1202 {background-position: -104px -1212px;}
+            .img1203 {background-position: -198px -1212px;}
+            .img1204 {background-position: -293px -1212px;}
+            .img1205 {background-position: -388px -1212px;}
+            .img1206 {background-position: -481px -1212px;}
+            .img1207 {background-position: -576px -1212px;}
+            .img1301 {background-position: -10px -1331.5px}
+            .img1302 {background-position: -104px -1331.5px;}
+            .img1303 {background-position: -198px -1331.5px;}
+            .img1304 {background-position: -293px -1331.5px;}
+            .img1305 {background-position: -388px -1331.5px;}
+            .img1306 {background-position: -481px -1331.5px;}
+            .img1307 {background-position: -576px -1331.5px;}
+            .img1401 {background-position: -10px -1451.5px}
+            .img1402 {background-position: -104px -1451.5px;}
+            .img1403 {background-position: -198px -1451.5px;}
+            .img1404 {background-position: -293px -1451.5px;}
+            .img1405 {background-position: -388px -1451.5px;}
+            .img1406 {background-position: -481px -1451.5px;}
+            .img1407 {background-position: -576px -1451.5px;}
+            .img1501 {background-position: -10px -1571.5px}
+            .img1502 {background-position: -104px -1571.5px;}
+            .img1503 {background-position: -198px -1571.5px;}
+            .img1504 {background-position: -293px -1571.5px;}
+            .img1505 {background-position: -388px -1571.5px;}
+            .img1506 {background-position: -481px -1571.5px;}
+            .img1507 {background-position: -576px -1571.5px;}
+            .img1601 {background-position: -10px -1691px}
+            .img1602 {background-position: -104px -1691px;}
+            .img1603 {background-position: -198px -1691px;}
+            .img1604 {background-position: -293px -1691px;}
+            .img1605 {background-position: -388px -1691px;}
+            .img1606 {background-position: -481px -1691px;}
+            .img1607 {background-position: -576px -1691px;}
+            .img1701 {background-position: -10px -1811.5px}
+            .img1702 {background-position: -104px -1811.5px;}
+            .img1703 {background-position: -198px -1811.5px;}
+            .img1704 {background-position: -293px -1811.5px;}
+            .img1705 {background-position: -388px -1811.5px;}
+            .img1706 {background-position: -481px -1811.5px;}
+            .img1707 {background-position: -576px -1811.5px;}
+            .img1801 {background-position: -9px -1932px}
+            .img1802 {background-position: -104px -1932px;}
+            .img1803 {background-position: -198px -1932px;}
+            .img1804 {background-position: -293px -1932px;}
             body {background-color: black;}
             .btnDiv {margin-top:20px;}
             .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
@@ -181,7 +152,7 @@
         </style>
     </head>
     <body>
-        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 1.3 - 2세대</div>
+        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 1.4 - 2세대</div>
         <div class="checkCnt">(<span id="cnt">0</span>/116)</div>
         <div id="imageDiv">
             <div class="image poke08 img201"><div></div></div>
@@ -191,35 +162,20 @@
             <div class="image poke08 img205"><div></div></div>
             <div class="image poke08 img206"><div></div></div>
             <div class="image poke08 img207"><div></div></div>
-            <div class="image poke08 img208"><div></div></div>
-            <div class="image poke08 img209"><div></div></div>
-            <div class="image poke08 img210"><div></div></div>
-            <div class="image poke08 img211"><div></div></div>
-            <div class="image poke08 img212"><div></div></div>
             <div class="image poke08 img301"><div></div></div>
             <div class="image poke08 img302"><div></div></div>
-            <div class="image poke08 img303"><div></div></div>
             <div class="image poke08 img304"><div></div></div>
+            <div class="image poke08 img303"><div></div></div>
             <div class="image poke08 img305"><div></div></div>
             <div class="image poke08 img306"><div></div></div>
             <div class="image poke08 img307"><div></div></div>
-            <div class="image poke08 img308"><div></div></div>
-            <div class="image poke08 img309"><div></div></div>
-            <div class="image poke08 img310"><div></div></div>
-            <div class="image poke08 img311"><div></div></div>
-            <div class="image poke08 img312"><div></div></div>
             <div class="image poke08 img401"><div></div></div>
             <div class="image poke08 img402"><div></div></div>
             <div class="image poke08 img403"><div></div></div>
-            <div class="image poke08 img404"><div></div></div>
             <div class="image poke08 img405"><div></div></div>
+            <div class="image poke08 img404"><div></div></div>
             <div class="image poke08 img406"><div></div></div>
             <div class="image poke08 img407"><div></div></div>
-            <div class="image poke08 img408"><div></div></div>
-            <div class="image poke08 img409"><div></div></div>
-            <div class="image poke08 img410"><div></div></div>
-            <div class="image poke08 img411"><div></div></div>
-            <div class="image poke08 img412"><div></div></div>
             <div class="image poke08 img501"><div></div></div>
             <div class="image poke08 img502"><div></div></div>
             <div class="image poke08 img503"><div></div></div>
@@ -227,11 +183,6 @@
             <div class="image poke08 img505"><div></div></div>
             <div class="image poke08 img506"><div></div></div>
             <div class="image poke08 img507"><div></div></div>
-            <div class="image poke08 img508"><div></div></div>
-            <div class="image poke08 img509"><div></div></div>
-            <div class="image poke08 img510"><div></div></div>
-            <div class="image poke08 img511"><div></div></div>
-            <div class="image poke08 img512"><div></div></div>
             <div class="image poke08 img601"><div></div></div>
             <div class="image poke08 img602"><div></div></div>
             <div class="image poke08 img603"><div></div></div>
@@ -239,11 +190,6 @@
             <div class="image poke08 img605"><div></div></div>
             <div class="image poke08 img606"><div></div></div>
             <div class="image poke08 img607"><div></div></div>
-            <div class="image poke08 img608"><div></div></div>
-            <div class="image poke08 img609"><div></div></div>
-            <div class="image poke08 img610"><div></div></div>
-            <div class="image poke08 img611"><div></div></div>
-            <div class="image poke08 img612"><div></div></div>
             <div class="image poke08 img701"><div></div></div>
             <div class="image poke08 img702"><div></div></div>
             <div class="image poke08 img703"><div></div></div>
@@ -251,11 +197,6 @@
             <div class="image poke08 img705"><div></div></div>
             <div class="image poke08 img706"><div></div></div>
             <div class="image poke08 img707"><div></div></div>
-            <div class="image poke08 img708"><div></div></div>
-            <div class="image poke08 img709"><div></div></div>
-            <div class="image poke08 img710"><div></div></div>
-            <div class="image poke08 img711"><div></div></div>
-            <div class="image poke08 img712"><div></div></div>
             <div class="image poke08 img801"><div></div></div>
             <div class="image poke08 img802"><div></div></div>
             <div class="image poke08 img803"><div></div></div>
@@ -263,11 +204,6 @@
             <div class="image poke08 img805"><div></div></div>
             <div class="image poke08 img806"><div></div></div>
             <div class="image poke08 img807"><div></div></div>
-            <div class="image poke08 img808"><div></div></div>
-            <div class="image poke08 img809"><div></div></div>
-            <div class="image poke08 img810"><div></div></div>
-            <div class="image poke08 img811"><div></div></div>
-            <div class="image poke08 img812"><div></div></div>
             <div class="image poke08 img901"><div></div></div>
             <div class="image poke08 img902"><div></div></div>
             <div class="image poke08 img903"><div></div></div>
@@ -275,11 +211,6 @@
             <div class="image poke08 img905"><div></div></div>
             <div class="image poke08 img906"><div></div></div>
             <div class="image poke08 img907"><div></div></div>
-            <div class="image poke08 img908"><div></div></div>
-            <div class="image poke08 img909"><div></div></div>
-            <div class="image poke08 img910"><div></div></div>
-            <div class="image poke08 img911"><div></div></div>
-            <div class="image poke08 img912"><div></div></div>
             <div class="image poke08 img1001"><div></div></div>
             <div class="image poke08 img1002"><div></div></div>
             <div class="image poke08 img1003"><div></div></div>
@@ -287,11 +218,6 @@
             <div class="image poke08 img1005"><div></div></div>
             <div class="image poke08 img1006"><div></div></div>
             <div class="image poke08 img1007"><div></div></div>
-            <div class="image poke08 img1008"><div></div></div>
-            <div class="image poke08 img1009"><div></div></div>
-            <div class="image poke08 img1010"><div></div></div>
-            <div class="image poke08 img1011"><div></div></div>
-            <div class="image poke08 img1012"><div></div></div>
             <div class="image poke08 img1101"><div></div></div>
             <div class="image poke08 img1102"><div></div></div>
             <div class="image poke08 img1103"><div></div></div>
@@ -299,7 +225,52 @@
             <div class="image poke08 img1105"><div></div></div>
             <div class="image poke08 img1106"><div></div></div>
             <div class="image poke08 img1107"><div></div></div>
-            <div class="image poke08 img1108"><div></div></div>
+            <div class="image poke08 img1201"><div></div></div>
+            <div class="image poke08 img1202"><div></div></div>
+            <div class="image poke08 img1203"><div></div></div>
+            <div class="image poke08 img1204"><div></div></div>
+            <div class="image poke08 img1205"><div></div></div>
+            <div class="image poke08 img1206"><div></div></div>
+            <div class="image poke08 img1207"><div></div></div>
+            <div class="image poke08 img1301"><div></div></div>
+            <div class="image poke08 img1302"><div></div></div>
+            <div class="image poke08 img1303"><div></div></div>
+            <div class="image poke08 img1304"><div></div></div>
+            <div class="image poke08 img1305"><div></div></div>
+            <div class="image poke08 img1306"><div></div></div>
+            <div class="image poke08 img1307"><div></div></div>
+            <div class="image poke08 img1401"><div></div></div>
+            <div class="image poke08 img1402"><div></div></div>
+            <div class="image poke08 img1403"><div></div></div>
+            <div class="image poke08 img1404"><div></div></div>
+            <div class="image poke08 img1405"><div></div></div>
+            <div class="image poke08 img1406"><div></div></div>
+            <div class="image poke08 img1407"><div></div></div>
+            <div class="image poke08 img1501"><div></div></div>
+            <div class="image poke08 img1502"><div></div></div>
+            <div class="image poke08 img1503"><div></div></div>
+            <div class="image poke08 img1504"><div></div></div>
+            <div class="image poke08 img1505"><div></div></div>
+            <div class="image poke08 img1506"><div></div></div>
+            <div class="image poke08 img1507"><div></div></div>
+            <div class="image poke08 img1601"><div></div></div>
+            <div class="image poke08 img1602"><div></div></div>
+            <div class="image poke08 img1603"><div></div></div>
+            <div class="image poke08 img1604"><div></div></div>
+            <div class="image poke08 img1605"><div></div></div>
+            <div class="image poke08 img1606"><div></div></div>
+            <div class="image poke08 img1607"><div></div></div>
+            <div class="image poke08 img1701"><div></div></div>
+            <div class="image poke08 img1702"><div></div></div>
+            <div class="image poke08 img1703"><div></div></div>
+            <div class="image poke08 img1704"><div></div></div>
+            <div class="image poke08 img1705"><div></div></div>
+            <div class="image poke08 img1706"><div></div></div>
+            <div class="image poke08 img1707"><div></div></div>
+            <div class="image poke08 img1801"><div></div></div>
+            <div class="image poke08 img1802"><div></div></div>
+            <div class="image poke08 img1803"><div></div></div>
+            <div class="image poke08 img1804"><div></div></div>
         </div>
         <div class="btnDiv">
             <input type="button" id="reverseBtn" value="선택반전"/>
