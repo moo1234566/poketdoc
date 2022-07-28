@@ -5,8 +5,9 @@ https://pokedoc.github.io/pokedoc/
 
 ## 버전 히스토리
 
-### ver 1.6 (예정)
-이미지 여백 제거 scss 도입 해야 될 듯?
+### ver 1.6(예정)
+진화순도감 추가
+GA 추가 및 ad sense 준비
 ### ver 1.5
 부우부 이미지 변경
 fix 도감 추가
