@@ -5,7 +5,7 @@ https://pokedoc.github.io/pokedoc/
 
 ## 버전 히스토리
 
-### ver 1.6(예정)
+### ver 1.6
 진화순도감 추가
 GA 추가 및 ad sense 준비
 ### ver 1.5
