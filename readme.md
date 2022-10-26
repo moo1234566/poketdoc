@@ -1,7 +1,7 @@
 포켓몬스터 2022 띠부띠부씰 도감 ver 1.7
 ==========================
 
-https://pokedoc.github.io/pokedoc/
+https://moadocs.github.io/pokedoc/
 
 ## 버전 히스토리
 
