@@ -559,9 +559,9 @@
 
     var showBtn = document.getElementById('showBtn');
     showBtn.addEventListener('click', function(event){
-        var image = document.querySelectorAll('.selected');
+        var image = document.querySelectorAll('.image');
         for (var i = 0 ; i < image.length; i++) {
-            image[i].parentElement.style.display = ""; 
+            image[i].style.display = ""; 
         }
     });
 
