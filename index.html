@@ -7,7 +7,7 @@
         <meta data-n-head="ssr" name="robots" content="noindex">
         <meta data-n-head="ssr" name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="포켓몬스터 2022 띠부띠부씰 도감 ver 1.7">
+        <meta data-n-head="ssr" data-hid="og:title" property="og:title" content="포켓몬스터 2022 띠부띠부씰 도감 ver 1.8">
         <meta data-n-head="ssr" data-hid="og:description" property="og:description" content="포켓몬스터 띠부띠부씰 추억을 보관하자 2세대 추가">
         <meta data-n-head="ssr" data-hid="og:image" property="og:image" content="https://pokedoc.github.io/pokedoc/preview.PNG">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,7 +23,7 @@
      crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 1.7</title>
+        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 1.8</title>
         <style>
             .flex {display: flex;}
             #downloadBtn { margin: 0 10px; }
@@ -193,8 +193,17 @@
             </style>
     </head>
     <body>
-        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 1.7</div>
+        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 1.8</div>
         <div class="checkCnt">(<span id="cnt">0</span>/275)</div>
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
+        data-ad-width = "320"
+        data-ad-height = "50"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+                <div class="checkCnt">(<span id="cnt">0</span>/275) 
+                    <input type="button" id="delBtn" value="흑백 씰 숨기기"/>
+                    <input type="button" id="showBtn" value="숨긴 씰 보기"/>
+                </div>
         <div id="imageDiv">
             <div class="image poke01 img01"><div></div></div>
             <div class="image poke01 img02"><div></div></div>
@@ -542,6 +551,22 @@ data-ad-height = "50"></ins>
         });
     }
     createLink();
+
+    var delBtn = document.getElementById('delBtn');
+    delBtn.addEventListener('click', function(event){
+        var image = document.querySelectorAll('.selected');
+        for (var i = 0 ; i < image.length; i++) {
+            image[i].parentElement.style.display = "none"; 
+        }
+    });
+
+    var showBtn = document.getElementById('showBtn');
+    showBtn.addEventListener('click', function(event){
+        var image = document.querySelectorAll('.image');
+        for (var i = 0 ; i < image.length; i++) {
+            image[i].style.display = ""; 
+        }
+    });
 
     var reverseBtn = document.getElementById('reverseBtn');
     reverseBtn.addEventListener('click', function(event){
