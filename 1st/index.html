@@ -21,7 +21,7 @@
 </script>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3067887546047208"
      crossorigin="anonymous"></script>
-        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 1.9 1st</title>
+        <title>포켓몬스터 2022 띠부띠부씰 도감 ver 2.0 1st</title>
         <style>
             .flex {display: flex;}
             #downloadBtn { margin: 0 10px; }
@@ -61,6 +61,11 @@
             .img24 {background-position: -403px -507px;}
             .img25 {background-position: -496px -507px;}
             body {background-color: black;}
+            body.negative {background-color: white; color: black;}
+            body.negative .title {color: black;}
+            body.negative .textDiv {color: black;}
+            body.negative .menu, body.negative .menu a  {color: black;}
+            body.negative .linkLabel, body.negative .checkCnt {color:black; margin-bottom: 10px;} {color: black;}
             .btnDiv {margin-top:20px;}
             .title {text-align:center; font-size:20px; margin-bottom:20px; color:white;}
             .menu {text-align:right; font-size:20px; margin-bottom:20px; color:white;}
@@ -72,8 +77,8 @@
             .textDiv ul li span {color:crimson;}
         </style>
     </head>
-    <body>
-        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 1.9 - 1세대</div>
+    <body id="body">
+        <div class="title">포켓몬스터 2022 띠부띠부씰 도감 ver 2.0 - 1세대</div>
         <ins class="kakao_ad_area" style="display:none;"
         data-ad-unit = "DAN-9aSR9NK2SSZf6ru4"
         data-ad-width = "320"
@@ -82,6 +87,7 @@
                     <div class="checkCnt">(<span id="cnt">0</span>/159)
                     <input type="button" id="delBtn" value="흑백 씰 숨기기"/>
                     <input type="button" id="showBtn" value="숨긴 씰 보기"/>
+                    <input type="button" id="ngtBtn" value="배경색 반전"/>
                 </div>
         <div id="imageDiv">
             <div class="image poke01 img01"><div></div></div>
@@ -284,6 +290,7 @@
             / <a href="https://moadocs.github.io/pokedoc/halloween_number/">할로윈(번호순)</a>
             / <a href="https://moadocs.github.io/pokedoc/winter/">겨울 왕띠부</a>
             / <a href="https://moadocs.github.io/pokedoc/winter_number/">겨울왕띠부(번호순)</a>
+            / <a href="https://moadocs.github.io/pokedoc/partytest/">러블리파티(임시)</a>
         </div>
     </body>
 </html>
@@ -331,6 +338,16 @@
         var image = document.querySelectorAll('.image');
         for (var i = 0 ; i < image.length; i++) {
             image[i].style.display = ""; 
+        }
+    });
+
+    var negativeBtn = document.getElementById('ngtBtn');
+    negativeBtn.addEventListener('click', function(event){
+        var body = document.getElementById('body');
+        if(body.className === "negative"){
+            body.className = ""
+        } else {
+            body.className = "negative"
         }
     });
 
